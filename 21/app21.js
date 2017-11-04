@@ -42,8 +42,9 @@ function getCard() {
     genRandomPair();
     cardDrawnContainer.style.background = "none";
     // console.log(randomCard);
-    cardDrawnContainer.style.transform = "scale(0.7)";
+    cardDrawnContainer.style.transform = "scale(0.5)";
     cardDrawnContainer.style.background = "url('./21/files/my-order/" + randomCard[0] + "_of_" + randomCard[1] + ".png') no-repeat 0 0";
+    cardDrawnContainer.classList.add("img-responsive");
     hitMe();
     setTimeout(function () {
         getButton.style.transform = "translate(-4px, 4px)";
@@ -68,7 +69,7 @@ function hitMe() {
             document.querySelector(".card3").style.background = "none";
             document.querySelector(".card4").style.background = "none";
         }
-        document.querySelector(".card" + botTurn).style.transform = "scale(0.3)";
+        document.querySelector(".card" + botTurn).style.transform = "scale(0.2)";
         document.querySelector(".card" + botTurn).style.background = "url('./21/files/my-order/" + randomCard[0] + "_of_" + randomCard[1] + ".png') no-repeat 0 0";
     }
     else {
