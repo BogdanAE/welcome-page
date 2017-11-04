@@ -10,11 +10,13 @@ newValues();
 
 // roll dice and add value to round score
 document.querySelector(".btn-roll").addEventListener('click', function () {
-    document.querySelector(".diceCont").style.display = "block";
-    var dice = Math.floor(Math.random() * 6) + 1;
-    console.log(dice);
-    if (dice != 1) {
-        roundScore += dice;
+    document.querySelector(".diceCont1").style.display = "block";
+    document.querySelector(".diceCont2").style.display = "block";
+    var dice1 = Math.floor(Math.random() * 6) + 1;
+    var dice2 = Math.floor(Math.random() * 6) + 1;
+    console.log(dice1, dice2)
+    if (dice1 != 1 && dice2 != 1) {
+        roundScore += (dice1 + dice2);
         document.getElementById('roundScore' + player).textContent = roundScore;
     }
     else {
@@ -25,9 +27,11 @@ document.querySelector(".btn-roll").addEventListener('click', function () {
         roundScore = 0;
         document.querySelector('.player' + player + 'cont').classList.toggle('active');
         document.querySelector('.player' + player + '-name').classList.toggle('active1');
-        document.querySelector(".diceCont").style.display = "none";
+        document.querySelector(".diceCont1").style.display = "none";
+        document.querySelector(".diceCont2").style.display = "none";
     }
-    document.querySelector(".dice").src = "./dice-game/dice-" + dice + ".png";
+    document.querySelector(".dice1").src = "./dice-game/dice-" + dice1 + ".png";
+    document.querySelector(".dice2").src = "./dice-game/dice-" + dice2 + ".png";
 });
 
 //keek  round score and make active the other player
@@ -83,5 +87,6 @@ function newValues() {
     document.querySelector('.player1-name').classList.remove('active1');
     document.querySelector('.player0-name').classList.add('active1');
     document.querySelector('.player0cont').classList.add('active');
-    document.querySelector(".diceCont").style.display = "none";
+    document.querySelector(".diceCont1").style.display = "none";
+    document.querySelector(".diceCont2").style.display = "none";
 }

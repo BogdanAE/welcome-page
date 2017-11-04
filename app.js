@@ -12,20 +12,22 @@ var titleDom = document.querySelector(".title");
 var arrowR = document.querySelector(".fa fa-arrow-right");
 var arrowL = document.querySelector(".fa fa-arrow-left");
 var sound = document.getElementById("myInitSound");
+var name1 = document.getElementById("myName1");
 var soundHi = new Audio('./files/hi-1.wav');
+
 // END QUERY SELECTIONS
 // -----------------------------------------------------
-
-setTimeout(function(){
-    
+animateName();
+setTimeout(function () {
+    name1 = myName.bounce();
     rightOver.style.display = "none";
     leftOver.style.display = "none";
     sound.play();
-    setTimeout(function() {
+    setTimeout(function () {
         soundHi.play();
         rightOver.style.display = "block";
         leftOver.style.display = "block";
-    }, 6000)
+    }, 2000)
 }, 0)
 
 // -----------------------------------------------------
@@ -36,9 +38,16 @@ rightOver.addEventListener("mouseover", function () {
     left.classList.remove("active-left");
     titleDom.style.transition = "1s ease";
     titleDom.style.opacity = "1";
-    
-})
 
+})
+class myName {
+    var Lname = "Epure";
+    var Fname = "Bogdan";
+
+    bounce(){
+        this.Lname.style.bounce;
+    }
+}
 
 leftOver.addEventListener("mouseover", function () {
     left.classList.remove("active-left");
