@@ -1,0 +1,158 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background: url("background.jpg");
+    background-size: cover; 
+}
+.gameTitle {
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 2em;
+}
+.game-container {
+    position: absolute;
+    left: 25%;
+    top: 12.5%;
+    height: 75vh;
+    width: 50%;
+    border: 5px solid black;
+    background: white;
+}
+
+.btn-new{
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    left:42.5%;
+    border: 1px solid #9068be;
+    background: #e62739;
+    border-radius: 25px;
+    font-family: 'Merriweather';
+    transition: 1s ease;
+    cursor: pointer;
+}
+.btn-keep{
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    left: 42.5%;
+    top: 85%;
+    transition: 1s ease;
+    cursor: pointer;
+    border: 1px solid #9068be;
+    background: #9068be;
+    border-radius: 25px;
+    font-family: 'Merriweather';
+}
+.btn-keep:hover {
+    transition: 1s ease;
+    transform: scale(1.3);
+}
+.btn-new:hover {
+    transition: 1s ease;
+    transform: scale(1.2);
+}
+
+.btn-roll {
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 75%;
+    left:42.5%;
+    /* cursor: pointer; */
+    border: 1px solid #9068be;
+    background: #9068be;
+    border-radius: 25px;
+    font-family: 'Merriweather';
+}
+
+.btn-roll:hover {
+    transition: 1s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.player1cont,
+.player0cont {
+    transition: 1s ease;
+    float: left;
+    height:100%;
+    width: 50%;
+    /* z-index: 100; */
+}
+
+.active {
+    transition: 1s ease;
+    background: #6ed3cf;
+    z-index: 55;
+}
+
+.mainScoreBox {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    width: 25%;
+    left: 37.5%;
+    top: 5.5%;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid #e62739;  
+}
+.roundScore{
+    position: relative;
+    top: 50%;
+    left: 35%;
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid #e62739;
+}
+.player0-name,
+.player1-name {
+    text-align: center;
+    padding-top: 25px; 
+    font-family: 'Lobster';
+    font-size: 25px;
+}
+
+#mainScore1,
+#mainScore0 {
+    position: relative;
+    top: 0%;
+    font-size: 200%;
+}
+/* .diceCont{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+} */
+.dice {
+    position: absolute;
+    left: 45%;
+    top:45%;
+    background-size: contain;
+}
+.rulesText {
+    position: relative;
+    max-width: 250px;
+    font-family: 'Merriweather';
+}
+
+
+#roundScore1,
+#roundScore0 {
+    position: relative;
+    top: 0%;
+    left: 40%;
+}
+.active1,
+.active1{
+    transition: 1s ease;
+    font-size: 2em;
+    color: red;
+}
+

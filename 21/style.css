@@ -1,0 +1,271 @@
+body{
+    background-size: cover; 
+    background: url("background1.jpg");
+  
+}
+
+.gameTitle {
+    font-family: 'lobster';
+    text-align: center;
+    color: #f8ae2e;
+    text-shadow: 3px 3px 3px black;
+}
+
+.game-container {
+position: absolute;
+top: 8%;
+left: 5%;
+height: calc(100vh - 100px);
+width: 90%;
+background: linear-gradient(#e6af4b,#e05038);
+
+border: 2px solid #a8b6bf;
+border-radius: 20px;
+background-size: contain;
+}
+
+.cardDraw-container {
+    position: absolute;
+    top: -10%;
+    left:27.5%;
+    width: 40%;
+    height: 90%;
+    /* border: 1px solid black; */
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 15px;
+}
+.cardGot-containerMain {
+    background: linear-gradient(#ee6c5d, #e05038);
+    position: absolute;
+    border: 1px solid #a8b6bf;
+    top: 75%;
+    height: 25%;
+    width: 75%;
+    left: 12.5%;
+    border-radius: 5px;
+}
+
+.card1 {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 300%;
+    top: -100%;
+    width: 85%;
+    left: -25%;
+    /* border: 1px solid green; */
+}
+.card2 {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 300%;
+    top: -100%;
+    width: 85%;
+    left: -5%;
+    /* border: 1px solid green; */
+}
+.card3 {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    /* float: left; */
+    height: 300%;
+    top: -100%;
+    width: 85%;
+    left: 15%;
+    /* border: 1px solid green; */
+}
+.card4 {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 300%;
+    top: -100%;
+    width: 85%;
+    left: 35%;
+    /* border: 1px solid green; */
+}
+
+.btn-get {
+    transition: 1s ease;
+    position: absolute;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    top: 55%;
+    left: 10%;
+    padding: 8px 8px 8px 8px;
+    background: aqua;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'lobster';
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+.btn-hold {
+    transition: 1s ease;
+    position: absolute;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    top: 55%;
+    left: 80%;
+    padding: 8px 8px 8px 8px;
+    background: aqua;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'lobster';
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.scoreContainer {
+    position: absolute;
+    left: 10%;
+    padding: 5px 10px 5px 10px;
+    top: 25%;
+    width: auto;
+    border: 2px solid black;
+    font-family: 'lobster';
+    border-radius: 5px;
+}
+
+.scoreText {
+    min-width: 55px;
+    font-family: 'lobster';
+    font-size: 1.5em;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'lobster';
+}
+.AIscoreContainer {
+    position: absolute;
+    left: 75%;
+    padding: 5px 10px 5px 10px;
+    top: 25%;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.AIscoreText {
+    font-family: 'lobster';
+    font-size: 1.5em;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'lobster';
+}
+.turn {
+    position: absolute;
+    left: 10%;
+    padding: 5px 10px 5px 10px;
+    top: 5%;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'lobster';
+    border-radius: 5px;
+}
+
+.textWhoWonContainer {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    color: blue;
+    font-size: 2em;
+    width: 500px;
+    font-family: 'lobster';
+    text-align: center;
+}
+.btn-new{
+    transition: 1s ease;
+    position: absolute;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    top: 25%;
+    left: 45%;
+    padding: 8px 8px 8px 8px;
+    background: aqua;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'lobster';
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.btn-start {
+    transition: 1s ease;
+    position: absolute;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    top: 25%;
+    left: 45%;
+    padding: 8px 8px 8px 8px;
+    background: aqua;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'lobster';
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.btn-get:hover,
+.btn-hold:hover,
+.btn-new:hover,
+.btn-start:hover {
+    transition: 1s ease;
+    box-shadow: 5px 5px 5px black;
+    transform: translate(-3px,3px);
+    text-shadow: 2px 2px 2px black;
+}
+.won {
+    background: #e62739;
+    transition: 2s ease;
+    animation: bubble 2s ease infinite;
+    text-shadow: 2px 2px 2px black;
+}
+
+@keyframes bubble {
+    0%{transform: scale(1)}
+    50%{background:orange; transform: scale(1.4)}
+    100%{background:#e62739;transform: scale(1)}
+}
+
+.draw {
+    background: #62bcfa;
+    transition: 2s ease;
+    animation: drawAnim 2s ease infinite;
+}
+@keyframes drawAnim {
+    0%{transform: scale(1)}
+    50%{background:#6534ff; transform: scale(0.7)}
+    100%{background:#62bcfa;transform: scale(1)}
+}
+
+.preGameText {
+    position: absolute;
+    font-family: 'lobster';
+    font-size: 2em;
+    left: 40%;
+    top: 25%;
+    animation: bubleText 3s ease infinite;
+    color:#e62739;
+    text-shadow: 3px 3px 3px black;
+}
+@keyframes bubleText {
+    0%{text-shadow: 3px 3px 3px black;transform: scale(1)}
+    50%{text-shadow: 6px 6px 6px black;color:orange; transform: scale(0.7)}
+    100%{text-shadow: 3px 3px 3px black;color:#e62739;transform: scale(1)}
+}
