@@ -12,7 +12,6 @@ var titleDom = document.querySelector(".title");
 var arrowR = document.querySelector(".fa fa-arrow-right");
 var arrowL = document.querySelector(".fa fa-arrow-left");
 var sound = document.getElementById("myInitSound");
-var name1 = document.getElementById("myName1");
 var soundHi = new Audio('./files/hi-1.wav');
 
 // END QUERY SELECTIONS
