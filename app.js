@@ -17,9 +17,8 @@ var soundHi = new Audio('./files/hi-1.wav');
 
 // END QUERY SELECTIONS
 // -----------------------------------------------------
-animateName();
+
 setTimeout(function () {
-    name1 = myName.bounce();
     rightOver.style.display = "none";
     leftOver.style.display = "none";
     sound.play();
@@ -27,7 +26,7 @@ setTimeout(function () {
         soundHi.play();
         rightOver.style.display = "block";
         leftOver.style.display = "block";
-    }, 2000)
+    }, 6000)
 }, 0)
 
 // -----------------------------------------------------
@@ -40,14 +39,7 @@ rightOver.addEventListener("mouseover", function () {
     titleDom.style.opacity = "1";
 
 })
-class myName {
-    var Lname = "Epure";
-    var Fname = "Bogdan";
 
-    bounce(){
-        this.Lname.style.bounce;
-    }
-}
 
 leftOver.addEventListener("mouseover", function () {
     left.classList.remove("active-left");
