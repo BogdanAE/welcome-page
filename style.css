@@ -131,7 +131,42 @@ video{
     transition: 1.1s ease;
     box-shadow: 10px 10px 10px black;
 }
-
+.tic-btn{
+    position: absolute;
+    transition: 1s ease;
+    width: auto;
+    top: 44%;   
+    left: 39.5%;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    background: #9fa8a3;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.tic-btn:hover {
+    transform: scale(1.05);
+    transition: 1.1s ease;
+    box-shadow: 10px 10px 10px black;       
+}
+.darts-btn{
+    position: absolute;
+    transition: 1s ease;
+    width: auto;
+    top: 38%;   
+    left: 39.5%;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    background: #c5d5cb;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.darts-btn:hover {
+    transform: scale(1.05);
+    transition: 1.1s ease;
+    box-shadow: 10px 10px 10px black;       
+}
 .simon-btn{
     position: absolute;
     transition: 1s ease;
@@ -145,6 +180,7 @@ video{
     border-radius: 20px;
     cursor: pointer;
 }
+
 .simon-btn:hover {
     transform: scale(1.05);
     transition: 1.1s ease;

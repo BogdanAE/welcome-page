@@ -1,0 +1,217 @@
+body{
+    background: aqua;
+}
+
+.game-title-text{
+    text-align: center;
+    font-size: 2em;
+    font-family: cursive;
+}
+/* .dartSent{
+    position: fixed;
+    width: 100px;
+    height: 25px;
+    z-index: 99;
+    background: url("./files/dart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} */
+.board-container{
+    position: absolute;
+    min-width: 630px;
+    left: 5%;
+    top: 25%;
+    height: 50%;
+    border: 2px solid black;
+    background: url("./files/board.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+.button-ok{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: beige;
+    cursor: pointer;
+    transition: 1s ease;
+    box-shadow: 3px 3px 3px black;
+    background-color: #9068be;
+}
+.button-ok:hover{
+    transform: scale(1.05);
+    transform: translate(-3px, 3px);
+    box-shadow: 5px 5px 5px black;
+}
+.button-stop{
+    position: absolute;
+    top: 90%;
+    left: 65%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: beige;
+    cursor: pointer;
+    transition: 1s ease;
+    box-shadow: 3px 3px 3px black;
+    background-color: #9068be;
+}
+.button-stop:hover{
+    transform: scale(1.05);
+    transform: translate(-3px, 3px);
+    box-shadow: 5px 5px 5px black;
+}
+.button-animateH {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: beige;
+    cursor: pointer;
+}
+.dart-container1 {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    left: 100%;
+    top: 35%;
+    /* border: 2px solid black; */
+    background: url("./files/dart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.dart-container2 {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    left: 57%;
+    top: 43%;
+    /* border: 2px solid black; */
+    background: url("./files/dart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.dart-container3 {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    left: 57%;
+    top: 51%;
+    /* border: 2px solid black; */
+    background: url("./files/dart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.playerContainer {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    left: 40%;
+    top: 10%;
+    /* border: 1px solid black; */
+    font-family: cursive;
+    text-align: center; 
+}
+.p2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    font-size: 2em;
+    color: #e62739;
+}
+.p1 {
+    position: absolute;
+    top: 0;
+    left: 25%; 
+    font-size: 2em;
+    color: #aa863a;
+}
+
+.horizontal{
+    position: absolute;
+    height: 50px;
+    width: 25%;
+    top: 80%;
+    left: 30%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.vertical{
+    position: absolute;
+    height: 25%;
+    width: 50px;
+    left: 83%;
+    top: 25%;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.vertical-cont{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    height: 90%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.horizontal-cont{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    /* width: 100%; */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.playersScoreContainer{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 150px;
+}
+.player1score{
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    font-family: cursive;
+}
+.player2score{
+    position: absolute;
+    left: 75%;
+    top: 61%;
+    font-family: cursive;
+}
+
+.turnText{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    
+}
+.turn{
+    position: absolute;
+    top: 45%;
+    left: 95%; 
+}
+

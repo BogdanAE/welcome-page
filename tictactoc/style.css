@@ -1,0 +1,167 @@
+.game-container{
+    position: fixed;
+    left: 25%;
+    top: 12.5%;
+    width: 50%;
+    height: 75%;
+    border: 3px solid black;
+    background: white;
+}
+
+.game-title{
+    font-size: 2em;
+    text-align: center;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p1cont{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    background: white;
+    border: 1px solid green;
+}
+.p2cont{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    background: white;
+    border: 1px solid green;
+}
+.p1score{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 35%;
+    top: -15%;
+    color: rgb(238, 31, 111);
+}
+.ptext{
+    position: absolute;
+    top: -100%;
+    color: rgb(235, 99, 8);
+    font-size: 1.3em;
+}
+.p2score{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 35%;
+    top: -15%;
+    color: red;
+}
+.box0{
+    position: absolute;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box1 {
+    position: absolute;
+    left: 33.3%;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box2 {
+    position: absolute;
+    left: 66.6%;
+    width: 33.3%;
+    height: 33.3%;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box3 {
+    position: absolute;
+    left: 0%;
+    top: 33.3%;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box4 {
+    position: absolute;
+    left: 33.3%;
+    top: 33.3%;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box5 {
+    position: absolute;
+    left: 66.6%;
+    top: 33.3%;
+    width: 33.3%;
+    height: 33.3%;
+    border-bottom: black solid 3px; 
+    text-align: center;
+}
+.box6 {
+    position: absolute;
+    left: 0%;
+    top: 66.6%;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    text-align: center;
+}
+.box7 {
+    position: absolute;
+    left: 33.3%;
+    top: 66.6%;
+    width: 33.3%;
+    height: 33.3%;
+    border-right: black solid 3px;
+    text-align: center;
+}
+.box8 {
+    position: absolute;
+    left: 66.6%;
+    top: 66.6%;
+    width: 33.3%;
+    height: 33.3%;
+    text-align: center;
+}
+
+.x{
+    background: url("./assets/x.png");
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+.o{
+    background: url("./assets/o.png");
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+.winner-text {
+    transition: 2s ease;
+    position: absolute;
+    left: 42.5%;
+    top: 45%;
+    z-index: 999;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    color: rebeccapurple;
+    animation: bubble 2s ease infinite;
+}
+
+@keyframes bubble{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
